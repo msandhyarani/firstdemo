@@ -2,3 +2,13 @@ print("hey! hello welcome to  git hub")
 
 
 hello this is test for branching!
+
+
+
+
+
+- name: "Add github as known host"
+        run: ssh-keyscan -H github.com >> ~/.ssh/known_hosts
+
+      - name: "Configure GitHub to use private go modules"
+        run: git config --global url."git@github.com:merit".insteadOf https://github.com/merit
